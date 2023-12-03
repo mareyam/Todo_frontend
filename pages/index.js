@@ -9,7 +9,6 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <div className="relative w-full h-screen">
-      {/* Logout button on the top-right corner */}
       <div className="inset-0 absolute top-0 right-0 p-4">
         <Logout />
       </div>
@@ -21,7 +20,6 @@ export default function Home() {
         className="object-cover blur-sm"
       />
 
-      {/* Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <Profile />
         <NewTask />

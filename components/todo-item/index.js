@@ -36,6 +36,7 @@ const TodoItem = () => {
       })
       .catch((err) => console.log(err));
   };
+  console.log(users);
   return (
     <>
       <div className=" w-72 h-36 px-2 py-2 bg-white block justify-between items-start border-2 rounded-md">
@@ -44,7 +45,9 @@ const TodoItem = () => {
             <div className="py-1 flex justify-between">
               <div className="flex items-center">
                 <CheckCircleIcon className="h-6 mr-2" />
-                <p className="px-2">{item.email}</p>
+                <p className="px-2">
+                  {item.email} {email}
+                </p>
               </div>
               <DotIcon className="w-6" />
               <Link href={`/update/${item._id}`}>
