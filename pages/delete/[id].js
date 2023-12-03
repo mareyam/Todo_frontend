@@ -20,7 +20,7 @@ export default function Update() {
         setPassword(result.data.password);
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [id]);
 
   const Delete = (e) => {
     e.preventDefault();
